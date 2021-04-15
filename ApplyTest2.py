@@ -170,6 +170,7 @@ def main():
     a_and_b = apply("AND", a, b, h_table, m, nodes, a_cache)
     f = apply("OR", a_and_b, not_c, h_table, m, nodes, a_cache)
 
+    print()
     print("BDDに対応する表")
     print_nodes(f, nodes)
     print()
